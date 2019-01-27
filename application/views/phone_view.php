@@ -81,9 +81,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     	// Start jQuery function after page is loaded
         $(document).ready(function(){
         	// Initiate DataTable function comes with plugin
-        	$('#dataTable').DataTable();
+            $('#dataTable').DataTable();
         	// Start jQuery click function to view Bootstrap modal when view info button is clicked
-            $('.view_data').click(function(){
+             $('#dataTable').on('click', '.view_data', function(){
             	// Get the id of selected phone and assign it in a variable called phoneData
                 var phoneData = $(this).attr('id');
                 // Start AJAX function
